@@ -8,8 +8,8 @@ import cucumber.api.junit.Cucumber;
 @RunWith(Cucumber.class)
 @CucumberOptions(
 		features = {"classpath:features"},
-		glue = "steps",
-		tags = "@DBScenario1",
+		glue = "stepDefinitions",
+		tags = "@Test_Feature",
 		monochrome = true,
 		dryRun = false,
 		plugin = {
@@ -20,6 +20,6 @@ import cucumber.api.junit.Cucumber;
 		}
 		
 		)
-public class LoginRunner {
+public class MainRunner {
 
 }
